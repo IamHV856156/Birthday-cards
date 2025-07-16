@@ -47,8 +47,7 @@ body{
     top: 0;
 }
 .inside{
-   /* background: linear-gradient(to right, #b08462,#b87777 30%); */
-background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
+   background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
    padding: 0 20px;
    z-index: 1;
    text-align: center;
@@ -102,7 +101,6 @@ background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
     z-index: 2;
     transform-origin: left;
     transition: 1s ease-in-out;
-    cursor: pointer;
     transform: rotateY(0deg) translate(0);
     will-change: transform;
 }
@@ -113,7 +111,6 @@ background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
     margin-top: 30px;
     text-align: center;
     letter-spacing: 6px;
-    /* color: #000046; */
 }
 .front,.back{
     height: 100%;
@@ -123,8 +120,6 @@ background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
     backface-visibility: hidden;
 }
 .front{
-    /* background-color: #ca8686; */
-    /* background-color: #A88F78;; */
     background: linear-gradient(to bottom right, #c2a2d6, #95c5b6);
     display: flex;
     flex-direction: column;
@@ -194,7 +189,6 @@ background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
 }
 .back{
     transform: rotateY(180deg);
-    /* background: linear-gradient(to left, #e6cfa7 , #dfbaba 30%); */
    background: linear-gradient(to left, #FFFACD, #FFDBDA 30%);
 }
 .cake{
@@ -332,7 +326,7 @@ background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
         transform: rotate(45deg) scale(1);
         box-shadow: 0 0 10px 2px #ffa500;
     }
-}*/
+}
 .cool{
     position: fixed;
     top: 0%;
@@ -352,7 +346,6 @@ background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
     position: absolute;
     width: 15px;
     height: 15px;
-    /* border-radius:50%; */
 }
  .cool.burst .confetti{
     animation: confettiburst 2s ease-out forwards;
@@ -391,7 +384,6 @@ background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
     color: #fff;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     font-size: 0.9em;
     font-weight: 600;
     z-index: 200;
