@@ -384,6 +384,7 @@ body{
     color: #fff;
     border: none;
     border-radius: 8px;
+    cursor: none;
     font-size: 0.9em;
     font-weight: 600;
     z-index: 200;
