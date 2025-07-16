@@ -71,7 +71,6 @@ background: linear-gradient(to bottom left, #fff7b0, #ffc2c0);
 .inside h1{
     font-size: clamp(35px,12vw,100px);
     line-height: 1.2;
-    cursor: pointer;
     font-family: 'Great Vibes';
 }
 .inside p{

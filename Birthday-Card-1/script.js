@@ -1,51 +1,32 @@
 document.addEventListener('DOMContentLoaded',()=>{
     const card= document.querySelector('.card');
     const candle= document.querySelector('.candle');
+    const insideh1 = document.querySelector('.inside h1');
+    const outside = document.querySelector('.outside');
     const cool= document.querySelector('.cool');
     const cake= document.querySelector('.cake');
-    const customcursor = document.querySelector('customcursor');
+    const customcursor = document.getElementById('customcursor');
     const colors = ['#FF69B4','#8A2BE2','#00CED1','#FFD700','#FF4500','#32CD32','#1E90FF','#BA55D3','#FF8C00','#ADFF2F','#DA70D6','#40E0D0','#FF1493','#6495ED','#DC143C','#00FF7F','#8B008B','#FFFF00' ];
     const num_confetti=100;
 
-    // if(customcursor){
-    //     document.addEventListener('mouseover',(e)=>{
-    //         customcursor.style.left =e.clientX+'px';
-    //         customcursor.style.top =e.clientY+'px';
-    //     });
+    //Cursor logic
+    if(customcursor){
+        document.addEventListener('mousemove',(e)=>{
+            customcursor.style.left =e.clientX+'px';
+            customcursor.style.top =e.clientY+'px';
+        });
 
-    //     document.addEventListener('mousedown',(e)=>{
-    //         customcursor.classList.add('active');
-    //     });
+        document.addEventListener('mousedown',()=>{
+            customcursor.classList.add('active');
+        });
 
-    //     document.addEventListener('mouseup',(e)=>{
-    //         customcursor.classList.remove('active');
-    //     });
-    // }else{
-    //     console.log("Custom cursor element with ID'customCursor' not Found")
-    
+        document.addEventListener('mouseup',()=>{
+            customcursor.classList.remove('active');
+        });
+    }else{
+        console.log("Custom cursor element with ID'customcursor' not Found")
+    }
 
-    // if(card && outside && insideh1 && goback){
-    //     outside.addEventListener('click',()=>{
-    //         card.classList.add('flipped');
-    //         goback.classList.add(show);
-    //         burstconfetti();
-    //         if(customcursor){
-    //             customcursor.style.opacity='0';
-    //             customcursor.style.pointerEvents='none';
-    //         }
-    //     });
-
-    //      goBackButton.addEventListener('click', () => {
-    //         card.classList.remove('flipped'); 
-    //         goBackButton.classList.remove('show'); 
-    //         if (customcursor) {
-    //             customcursor.style.opacity = '1';
-    //             customcursor.style.pointerEvents = 'auto';
-    //         }
-    //     });
-    // } else {
-    //     console.error("One or more card elements (card, outside, inside h1, goBackButton) not found!");
-    // }
     function createconfetti(){
         if(!cool){
             console.error("Error:'.cool' Element not found in the DOM. Confetti can'nt be created.");
